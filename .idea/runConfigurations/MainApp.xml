@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="MainApp" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="com.ak.app.MainApp" />
+    <option name="MAIN_CLASS_NAME" value="com.ak.quarkus.MainApp" />
     <module name="SimpleApp.hello.main" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.ak.app.*" />
+        <option name="PATTERN" value="com.ak.quarkus.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

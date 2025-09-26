@@ -1,0 +1,12 @@
+plugins {
+    alias(libs.plugins.quarkus)
+}
+
+dependencies {
+    implementation libs.jspecify
+    implementation enforcedPlatform(libs.quarkus)
+    implementation 'io.quarkus:quarkus-rest'
+
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
+}

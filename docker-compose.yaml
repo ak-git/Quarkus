@@ -1,9 +1,9 @@
 services:
-  simple-app:
-    container_name: simple-app
-    image: a002k/simple-app:latest
+  quarkus:
+    container_name: quarkus
+    image: a002k/quarkus:latest
     volumes:
-      - simple-app:/home/runner/
+      - quarkusp:/home/runner/
 
 volumes:
-  simple-app:
+  quarkus:

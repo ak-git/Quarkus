@@ -1,9 +1,17 @@
-# Simple Java "Hello World" Application with Gradle and Docker support
+# Simple Quarkus "Hello World" Application with Gradle and Docker support
 
-## Run using Gradle
+## Running the application in dev mode
 
-```shell
-./gradlew run -t
+You can run your application in **dev** mode that enables live coding using:
+
+```shell script
+./gradlew --console=plain quarkusDev
+```
+
+You can run your application in **prod** mode that enables live coding using:
+
+```shell script
+./gradlew --console=plain quarkusRun
 ```
 
 ## [Semantic versioning](https://zoltanaltfatter.com/2020/04/10/semantic-versioning-with-jgitver/)
@@ -24,14 +32,6 @@
 git tag 2025.09
 ```
 
-## Update dependencies
-
-### Plugin [com.github.ben-manes.versions](https://github.com/ben-manes/gradle-versions-plugin)
-
-```shell
-./gradlew dependencyUpdates
-```
-
 ## Check dependencies
 
 ### Plugin [dependency-analysis-gradle-plugin](https://github.com/autonomousapps/dependency-analysis-gradle-plugin)
@@ -43,11 +43,11 @@ git tag 2025.09
 ## Run docker image
 
 ```shell
-docker run --rm a002k/simple-app
+docker run --rm a002k/quarkus
 ```
 
 ```shell
-docker run -d --name simple-app --rm a002k/simple-app
+docker run -d --name quarkus --rm a002k/quarkus
 ```
 
 - ```-i``` Keep STDIN open even if not attached
@@ -57,25 +57,25 @@ docker run -d --name simple-app --rm a002k/simple-app
 and follow ```-f``` logs
 
 ```shell
-docker logs -f simple-app
+docker logs -f quarkus
 ```
 
 to stop
 
 ```shell
-docker stop simple-app
+docker stop quarkus
 ```
 
 ## Run docker image as docker-compose
 
 ```shell
-docker compose run -d --name simple-app --rm simple-app
+docker compose run -d --name quarkus --rm quarkus
 ```
 
 and follow ```-f``` logs
 
 ```shell
-docker compose logs -f simple-app
+docker compose logs -f quarkus
 ```
 
 to stop
@@ -84,14 +84,14 @@ to stop
 docker compose down
 ```
 
-[![Github Action Badge](https://github.com/ak-git/SimpleApp/actions/workflows/actions.yml/badge.svg)](https://github.com/ak-git/SimpleApp/actions/workflows/actions.yml/badge.svg)
+[![Github Action Badge](https://github.com/ak-git/Quarkus/actions/workflows/actions.yml/badge.svg)](https://github.com/ak-git/SimpleApp/actions/workflows/actions.yml/badge.svg)
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ak-git_SimpleApp&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ak-git_SimpleApp)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)

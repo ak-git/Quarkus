@@ -6,10 +6,6 @@ pluginManagement {
     }
 }
 
-plugins {
-    id('com.autonomousapps.build-health') version '3.0.4'
-}
-
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
@@ -17,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = 'SimpleApp'
-include 'hello'
+rootProject.name = 'Quarkus'
+include 'quarkus'
