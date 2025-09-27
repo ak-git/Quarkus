@@ -32,14 +32,6 @@ You can run your application in **prod** mode that enables live coding using:
 git tag 2025.09
 ```
 
-## Check dependencies
-
-### Plugin [dependency-analysis-gradle-plugin](https://github.com/autonomousapps/dependency-analysis-gradle-plugin)
-
-```shell
-./gradlew buildHealth
-```
-
 ## Run docker image
 
 ```shell
