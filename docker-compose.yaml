@@ -3,7 +3,7 @@ services:
     container_name: quarkus
     image: a002k/quarkus:latest
     volumes:
-      - quarkusp:/home/runner/
+      - quarkus:/home/runner/
 
 volumes:
   quarkus:
