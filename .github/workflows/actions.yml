@@ -40,3 +40,11 @@ jobs:
             ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: ${{ runner.os }}-gradle-
+      - name: Build and analyze
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: gradle build jacocoAggregatedReport sonar --info
+      - name: Compute version
+        run: |
+          gradle version
+          echo "BUILD_VERSION=$(gradle version | grep Version | awk '{ print $2 }')" >> $GITHUB_ENV
