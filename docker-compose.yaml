@@ -2,8 +2,16 @@ services:
   quarkus:
     container_name: quarkus
     image: a002k/quarkus:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - bridge-net
     volumes:
-      - quarkus:/home/runner/
+      - quarkus:/deployments/
+
+networks:
+  bridge-net:
+    driver: bridge
 
 volumes:
   quarkus:
