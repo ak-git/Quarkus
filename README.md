@@ -32,14 +32,6 @@ You can run your application in **prod** mode that enables live coding using:
 git tag 2025.09
 ```
 
-## Check dependencies
-
-### Plugin [dependency-analysis-gradle-plugin](https://github.com/autonomousapps/dependency-analysis-gradle-plugin)
-
-```shell
-./gradlew buildHealth
-```
-
 ## Run docker image
 
 ```shell
@@ -84,7 +76,7 @@ to stop
 docker compose down
 ```
 
-[![Github Action Badge](https://github.com/ak-git/Quarkus/actions/workflows/actions.yml/badge.svg)](https://github.com/ak-git/SimpleApp/actions/workflows/actions.yml/badge.svg)
+[![Github Action Badge](https://github.com/ak-git/Quarkus/actions/workflows/actions.yml/badge.svg)](https://github.com/ak-git/Quarkus/actions/workflows/actions.yml/badge.svg)
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ak-git_Quarkus&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ak-git_Quarkus)
