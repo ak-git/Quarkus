@@ -6,6 +6,7 @@ jgitver = '0.10.0-rc03'
 
 jspecify = '1.0.0'
 quarkus = '3.28.1'
+quarkus-config-hocon = '2.4.0'
 
 [plugins]
 sonarqube = { id = 'org.sonarqube', version.ref = 'sonarqube' }
@@ -18,4 +19,12 @@ quarkus = { id = 'io.quarkus', version.ref = 'quarkus' }
 jspecify = { module = 'org.jspecify:jspecify', version.ref = 'jspecify' }
 quarkus = { module = 'io.quarkus:quarkus-bom', version.ref = 'quarkus' }
 
+quarkus-rest = { module = 'io.quarkus:quarkus-rest' }
+quarkus-config-hocon = { module = 'io.quarkiverse.config:quarkus-config-hocon', version.ref = 'quarkus-config-hocon' }
+
+quarkus-junit5 = { module = 'io.quarkus:quarkus-junit5' }
+rest-assured = { module = 'io.rest-assured:rest-assured' }
+
 [bundles]
+implementation = ['quarkus-rest', 'quarkus-config-hocon']
+test-implementation = ['quarkus-junit5', 'rest-assured']
