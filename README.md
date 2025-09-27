@@ -1,8 +1,18 @@
 # Simple Quarkus "Hello World" Application with Gradle and Docker support
 
+Inspired by [Quarkus getting-started](https://quarkus.io/guides/getting-started) example
+
 ## Running the application in dev mode
 
-You can run your application in **dev** mode that enables live coding using:
+You can run your application in **dev** mode that enables live coding using
+
+1. Quarkus CLI:
+
+```shell script
+quarkus dev
+```
+
+2: Gradle:
 
 ```shell script
 ./gradlew --console=plain quarkusDev
@@ -12,6 +22,12 @@ You can run your application in **prod** mode that enables live coding using:
 
 ```shell script
 ./gradlew --console=plain quarkusRun
+```
+
+## Once started, you can request the provided endpoint:
+
+```shell script
+curl -w "\n" http://localhost:8080/hello
 ```
 
 ## [Semantic versioning](https://zoltanaltfatter.com/2020/04/10/semantic-versioning-with-jgitver/)
