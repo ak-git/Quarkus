@@ -11,7 +11,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
 @Path("/hello")
-public class GreetingResource {
+public final class GreetingResource {
   private final Logger logger;
 
   @Inject
