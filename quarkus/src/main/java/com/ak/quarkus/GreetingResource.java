@@ -1,5 +1,6 @@
 package com.ak.quarkus;
 
+import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
@@ -11,13 +12,18 @@ import java.time.ZonedDateTime;
 
 @Path("/hello")
 public class GreetingResource {
-  private static final Logger LOGGER = Logger.getLogger(GreetingResource.class);
+  private final Logger logger;
+
+  @Inject
+  public GreetingResource(Logger logger) {
+    this.logger = logger;
+  }
 
   @GET
   @Produces(MediaType.TEXT_PLAIN)
   public String hello() {
     String message = "Hello World! %s".formatted(ZonedDateTime.now(ZoneId.systemDefault()));
-    LOGGER.debug(message);
+    logger.debug(message);
     return message;
   }
 }
