@@ -5,7 +5,7 @@ spotbugs = '6.4.3'
 jgitver = '0.10.0-rc03'
 
 jspecify = '1.0.0'
-quarkus = '3.28.3'
+quarkus = '3.28.4'
 quarkus-config-hocon = '2.4.0'
 
 [plugins]
@@ -17,7 +17,7 @@ quarkus = { id = 'io.quarkus', version.ref = 'quarkus' }
 
 [libraries]
 jspecify = { module = 'org.jspecify:jspecify', version.ref = 'jspecify' }
-quarkus = { module = 'io.quarkus:quarkus-bom', version.ref = 'quarkus' }
+quarkus = { module = 'io.quarkus.platform:quarkus-bom', version.ref = 'quarkus' }
 
 quarkus-rest = { module = 'io.quarkus:quarkus-rest' }
 quarkus-config-hocon = { module = 'io.quarkiverse.config:quarkus-config-hocon', version.ref = 'quarkus-config-hocon' }
