@@ -39,14 +39,9 @@ allprojects {
 
     idea {
         module {
-            inheritOutputDirs = true
             downloadJavadoc = true
             downloadSources = true
         }
-    }
-
-    sourceSets {
-        main.output.resourcesDir = main.java.classesDirectory
     }
 
     jacoco {
