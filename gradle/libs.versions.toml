@@ -5,7 +5,7 @@ spotbugs = '6.4.4'
 jgitver = '0.10.0-rc03'
 
 jspecify = '1.0.0'
-quarkus = '3.29.1'
+quarkus = '3.29.2'
 quarkus-config-hocon = '2.4.0'
 
 [plugins]
