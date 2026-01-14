@@ -1,5 +1,5 @@
 # https://catalog.redhat.com/en/software/containers/ubi9/openjdk-25-runtime/69204990c46419100ce30a5b#get-this-image
-FROM registry.access.redhat.com/ubi9/openjdk-25-runtime@sha256:98c39e139b6aedaa2ceda1cb963858ac6d1690d00803aba1a16feb22a4cab0fb
+FROM registry.access.redhat.com/ubi9/openjdk-25-runtime@sha256:db53885de1df557e9cf053edf6ce640b312b6dc586780da68f108f876c7f2d6b
 
 ENV LANGUAGE='en_US:en'
 
