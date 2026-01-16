@@ -45,7 +45,7 @@ curl -w "\n" http://localhost:8080/hello
 ### Update version and add git tag
 
 ```shell
-git tag 2025.09
+git tag 2026.01
 ```
 
 ## Run docker image
