@@ -6,7 +6,7 @@ jgitver = '0.10.0-rc03'
 
 jspecify = '1.0.0'
 quarkus = '3.30.8'
-quarkus-config-hocon = '2.4.0'
+quarkus-config-hocon = '2.5.0'
 
 [plugins]
 sonarqube = { id = 'org.sonarqube', version.ref = 'sonarqube' }
