@@ -81,7 +81,7 @@
 # https://rh-openjdk.github.io/redhat-openjdk-containers/
 ###
 # https://catalog.redhat.com/en/software/containers/ubi9/openjdk-25/69204893fc0d23c633bf5c29
-FROM registry.access.redhat.com/ubi9/openjdk-25:1.24@sha256:824909478951e836e20000547a25381fcd1ce82b2033b435eb73fe997667b390
+FROM registry.access.redhat.com/ubi9/openjdk-25:1.24-2.1769595333@sha256:824909478951e836e20000547a25381fcd1ce82b2033b435eb73fe997667b390
 
 ENV LANGUAGE='en_US:en'
 
