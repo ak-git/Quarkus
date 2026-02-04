@@ -4,6 +4,9 @@ pluginManagement {
         mavenCentral()
         maven { url = 'https://jitpack.io' }
     }
+    plugins {
+        id 'io.quarkus' version '3.31.1'
+    }
 }
 
 dependencyResolutionManagement {
