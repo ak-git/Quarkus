@@ -13,3 +13,4 @@ sonarlint-state.xml
 /libraries/*
 *.iml
 /httpRequests/*
+/jmix-project.xml
