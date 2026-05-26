@@ -5,7 +5,7 @@ spotbugs = '6.5.5'
 git-semver = '0.19.0'
 
 jspecify = '1.0.0'
-quarkus = '3.35.4'
+quarkus = '3.36.0'
 quarkus-config-hocon = '2.5.0'
 
 [plugins]
