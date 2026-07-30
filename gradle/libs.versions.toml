@@ -2,7 +2,7 @@
 sonarqube = '7.3.1.8318'
 jacocolog = '4.0.2'
 spotbugs = '6.5.9'
-git-semver = '0.19.2'
+git-semver = '1.21.2'
 
 jspecify = '1.0.1'
 quarkus = '3.38.0'
@@ -12,7 +12,7 @@ quarkus-config-hocon = '2.5.0'
 sonarqube = { id = 'org.sonarqube', version.ref = 'sonarqube' }
 jacocolog = { id = 'org.barfuin.gradle.jacocolog', version.ref = 'jacocolog' }
 spotbugs = { id = 'com.github.spotbugs', version.ref = 'spotbugs' }
-git-semver = { id = 'com.github.jmongard.git-semver-plugin', version.ref = 'git-semver' }
+git-semver = { id = 'pl.allegro.tech.build.axion-release', version.ref = 'git-semver' }
 quarkus = { id = 'io.quarkus', version.ref = 'quarkus' }
 
 [libraries]
