@@ -4,7 +4,7 @@ jacocolog = '4.0.2'
 spotbugs = '6.5.9'
 git-semver = '0.19.2'
 
-jspecify = '1.0.0'
+jspecify = '1.0.1'
 quarkus = '3.37.4'
 quarkus-config-hocon = '2.5.0'
 
