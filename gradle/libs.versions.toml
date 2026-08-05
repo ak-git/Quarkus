@@ -2,7 +2,7 @@
 sonarqube = '7.3.1.8318'
 jacocolog = '4.0.2'
 spotbugs = '6.5.10'
-git-semver = '1.21.2'
+git-semver = '1.21.3'
 
 jspecify = '1.0.1'
 quarkus = '3.38.1'
