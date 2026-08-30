@@ -35,19 +35,29 @@ curl -w "\n" http://localhost:8080/hello
 ### Plugin [axion-release-plugin](https://github.com/allegro/axion-release-plugin)
 
 ```shell
-gradle currentVersion -q -Prelease.quiet
+./gradlew currentVersion -q -Prelease.quiet
 ```
 
 ### Update version
 
 ```shell
-gradle release
+./gradlew release
 ```
 
 ### Update version and add git tag
 
 ```shell
 git tag 2026.01
+```
+
+## Rewrite
+
+### [Migrate JUnit asserts to AssertJ](https://docs.openrewrite.org/recipes/java/testing/assertj/junittoassertj)
+
+Get token https://artifacts.codegenomeproject.org/maven/
+
+```shell
+./gradlew rewriteRun
 ```
 
 ## Run docker image

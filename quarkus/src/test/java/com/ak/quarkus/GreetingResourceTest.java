@@ -9,7 +9,7 @@ import static org.hamcrest.CoreMatchers.startsWith;
 @QuarkusTest
 class GreetingResourceTest {
   @Test
-  void testHelloEndpoint() {
+  void helloEndpoint() {
     given()
         .when().get("/hello")
         .then()

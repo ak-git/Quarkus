@@ -3,6 +3,8 @@ sonarqube = '7.4.0.8496'
 jacocolog = '4.0.2'
 spotbugs = '6.5.11'
 git-semver = '1.21.3'
+openrewrite = '7.41.0'
+rewrite-testing-frameworks = '3.44.0'
 
 jspecify = '1.0.1'
 quarkus = '3.39.1'
@@ -13,9 +15,12 @@ sonarqube = { id = 'org.sonarqube', version.ref = 'sonarqube' }
 jacocolog = { id = 'org.barfuin.gradle.jacocolog', version.ref = 'jacocolog' }
 spotbugs = { id = 'com.github.spotbugs', version.ref = 'spotbugs' }
 git-semver = { id = 'pl.allegro.tech.build.axion-release', version.ref = 'git-semver' }
+openrewrite = { id = 'org.openrewrite.rewrite', version.ref = 'openrewrite' }
 quarkus = { id = 'io.quarkus', version.ref = 'quarkus' }
 
 [libraries]
+rewrite-testing-frameworks = { module = 'org.openrewrite.recipe:rewrite-testing-frameworks', version.ref = 'rewrite-testing-frameworks' }
+
 jspecify = { module = 'org.jspecify:jspecify', version.ref = 'jspecify' }
 quarkus = { module = 'io.quarkus.platform:quarkus-bom', version.ref = 'quarkus' }
 

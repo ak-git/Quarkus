@@ -2,6 +2,7 @@ import io.quarkus.gradle.tasks.QuarkusDev
 
 plugins {
     alias(libs.plugins.quarkus)
+    alias(libs.plugins.openrewrite)
 }
 
 dependencies {
@@ -9,6 +10,9 @@ dependencies {
     implementation enforcedPlatform(libs.quarkus)
     implementation libs.bundles.implementation
     testImplementation libs.bundles.test.implementation
+    testImplementation "org.assertj:assertj-core:3.27.7"
+
+    rewrite libs.rewrite.testing.frameworks
 }
 
 test {
@@ -18,4 +22,15 @@ test {
 
 tasks.withType(QuarkusDev).configureEach {
     jvmArgs = ["--add-opens=java.base/java.lang=ALL-UNNAMED"]
+}
+
+rewrite {
+    activeRecipe('org.openrewrite.java.testing.assertj.JUnitToAssertj')
+    activeRecipe("org.openrewrite.java.testing.assertj.Assertj")
+    activeRecipe("org.openrewrite.java.testing.hamcrest.MigrateHamcrestToAssertJ")
+    setExportDatatables(true)
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
 }
