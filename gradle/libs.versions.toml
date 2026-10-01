@@ -8,7 +8,7 @@ rewrite-testing-frameworks = '3.44.0'
 
 jspecify = '1.0.1'
 quarkus = '3.40.1'
-quarkus-config-hocon = '2.5.0'
+quarkus-config-hocon = '2.6.0'
 
 [plugins]
 sonarqube = { id = 'org.sonarqube', version.ref = 'sonarqube' }
